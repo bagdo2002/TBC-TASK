@@ -6,7 +6,8 @@ const Design = () => {
   const [data, setData] = useState([]);
   const [type, setType] = useState([]);
   const [number, setNumber] = useState();
-  const [from, setFrom] = useState("");
+  const [filtered, setFiltered] = useState();
+  const [from, setFrom] = useState("0");
   const [to, setTo] = useState("10000");
   const [model, setModel] = useState([]);
   const [selectedMan, setSelectedMan] = useState(10);
@@ -30,8 +31,8 @@ const Design = () => {
   const [sortValue, setSortValue] = useState(1);
   const [rent, setRent] = useState(0);
   const [selectedModel, setSelectedModel] = useState();
-  const handleSubmit = (e) => {
-    e.preventDefault();
+
+  const getData = () => {
     const request = { method: "GET" };
     let params = new URLSearchParams({
       Mans: `${selectedMan}.${selectedModel}`,
@@ -46,9 +47,28 @@ const Design = () => {
         console.log(data.data.items);
         setNumber(data.data.meta.total);
         setData(data.data.items);
+        const filter = () => {
+          let filtered = data.data.items?.filter((el) => {
+            if (el.price >= from && el.price <= to) {
+              return el;
+            }
+          });
+          setFiltered(filtered);
+
+          return filtered;
+        };
+        filter();
       })
       .catch((error) => console.log(error));
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getData();
+  };
+  useEffect(() => {
+    setFiltered(getData());
+  }, []);
   // useEffect(() => {}, [
   //   selectedMan,
   //   selectedModel,
@@ -96,15 +116,7 @@ const Design = () => {
       })
       .catch((error) => console.log(error));
   }, []);
-  const filter = () => {
-    let filtered = data.filter((el) => {
-      if (el.price >= from && el.price <= to) {
-        return el;
-      }
-    });
-    return filtered;
-  };
-  const filtered = filter();
+
   return (
     <div className="design-container">
       {/* nav bar start */}
