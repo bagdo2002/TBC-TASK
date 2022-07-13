@@ -1,0 +1,595 @@
+@media(min-width:768px){
+
+.design-container {
+  width: 100%;
+  height: 1000vh;
+  background: #e5e5e5;
+  position: relative;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    height: 70px;
+    .nav-bar {
+      margin-left: 10px;
+      background: #ffffff;
+      width: 161px;
+      height: 46px;
+      position: relative;
+      p:first-of-type {
+        position: absolute;
+        top: 4px;
+        left: 11px;
+        font-size: 1.8rem;
+        color: #414042;
+        font-weight: bold;
+      }
+      p {
+        position: absolute;
+        top: 2px;
+        left: 120px;
+        font-size: 1.7rem;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+  .show {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    .cardsWrapper {
+      width: 50%;
+
+      margin-left: 50px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      .innerCardFilter {
+        width: 740px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        .found {
+          font-size: 1.4rem;
+          font-family: sans-serif;
+          font-weight: bold;
+        }
+        .filters {
+          width: 50%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          select {
+            margin-top: 7px;
+            background-color: white;
+            padding: 10px 8px 10px 12px;
+            width: 202px;
+            border-radius: 6px;
+            border: 1px solid rgb(214, 214, 214);
+          }
+        }
+      }
+    }
+  
+  
+    .filter-Bar-First {
+      width: 250px;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 520px;
+
+      background-color: #ffffff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      .filter-Btn {
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 250px;
+     border-top: 1px solid rgb(224, 224, 224);
+
+        button {
+          
+          padding: 8px 90px;
+          background: #fd4100;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          color: white;
+        }
+      }
+      .filter-itSelf {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    
+        
+        .money-filter {
+          width: 90%;
+          height: 50%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          
+          justify-content: center;
+          p { 
+            
+            font-weight: 550;
+            font-size: 20px;
+            line-height: 16px;
+          }
+          div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              margin-top: 10px;
+            }
+            input {
+              border: none;
+              outline: none;
+              width: 90px;
+              border-radius: 20%;
+              height: 20px;
+              padding: 20px;
+              margin-top: 15px;
+              border: 1px solid rgb(214, 214, 214);
+            }
+          }
+        }
+        .inputs {
+          outline: none;
+          display: flex;
+          flex-direction: column;
+         
+         
+          display: flex;
+          align-items: center;
+          justify-content: center;
+           width: 100%;
+           position: relative;
+        
+          .border{
+            position: absolute;
+            top: 250px;
+          
+            width: 250px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+          }
+          select {
+            margin-top: 7px;
+            padding: 10px 8px 10px 12px;
+            width: 202px;
+            border-radius: 6px;
+            border: 1px solid rgb(214, 214, 214);
+          }
+          p {
+            margin-top: 7px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+.cardCOntainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.form {
+  width: 740px;
+  height: 170px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  img {
+    border-radius: 5%;
+    height: 140px;
+  }
+}
+
+.text {
+  padding-left: 7px;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.parametrs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parametrs div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.price {
+  width: 20%;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form-select {
+  background: white;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+
+  &:after {
+    content: "▾";
+    position: absolute;
+    top: 0;
+    right: 12px;
+    z-index: 1;
+    color: black;
+    line-height: 40px;
+    font-size: 14px;
+
+    .ie & {
+      display: none;
+    }
+  }
+}
+
+select {
+  position: relative;
+  background: transparent;
+  background-image: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  padding: 10px 10px 10px 5px;
+
+  text-overflow: "";
+  text-indent: 5px;
+
+
+  &[multiple="multiple"] {
+    height: auto;
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+
+    &:hover {
+      border-color: #cccccc;
+    }
+  }
+
+  option[disabled] {
+    color: #d2d2d2;
+    text-shadow: none;
+    border: none;
+  }
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #888888;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+  .design-container {
+      width: 100%;
+      height: 1000vh;
+      background: #e5e5e5;
+      position: relative;
+      .show{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 10px ; 
+        .cardsWrapper {
+              width: 50%;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content:center;
+              .cardCOntainer {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 20px;
+                }
+                .form {
+                  width: 340px;
+                  height: 300px;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 10px;
+                }
+                
+                .card {
+                  width: 100%;
+                  height: 100%;
+                  padding: 5px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  img {
+                    border-radius: 5%;
+                    padding-top: 5px;
+                    height: 170px;
+                  }
+                }
+                
+                .text {
+                  padding-left: 7px;
+                  font-weight: 400;
+                  font-family: sans-serif;
+                  font-size: 1.3rem;
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  padding-top: 10px;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
+                }
+                
+                .parametrs {
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                
+                .parametrs div {
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: flex-start;
+                }
+                
+                .price {
+                  width: 100%;
+                  font-weight: bold;
+                  font-family: sans-serif;
+                  font-size: 1.3rem; padding: 5px;
+                  display: flex;     
+                  
+                  justify-content: flex-start;
+                }
+              .innerCardFilter {
+                width: 420px;
+                margin-top: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 20px;
+                .found {
+                  font-size: 1.4rem;
+                  font-family: sans-serif;
+                  font-weight: bold;
+                }
+                .filters {
+                  width: 50%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  select {
+                   
+                    background-color: white;
+                    padding: 10px 8px 10px 12px;
+                    width: 202px;
+                    border-radius: 6px;
+                    border: 1px solid rgb(214, 214, 214);
+                  }
+                }
+              }
+            }
+    .filter-Bar-First {
+      width: 250px;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 520px;
+
+      background-color: #ffffff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      .filter-Btn {
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 250px;
+     border-top: 1px solid rgb(224, 224, 224);
+
+        button {
+          
+          padding: 8px 90px;
+          background: #fd4100;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          color: white;
+        }
+      }
+      .filter-itSelf {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    
+        
+        .money-filter {
+          width: 90%;
+          height: 50%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          
+          justify-content: center;
+          p { 
+            
+            font-weight: 550;
+            font-size: 20px;
+            line-height: 16px;
+          }
+          div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              margin-top: 10px;
+            }
+            input {
+              border: none;
+              outline: none;
+              width: 90px;
+              border-radius: 20%;
+              height: 20px;
+              padding: 20px;
+              margin-top: 15px;
+              border: 1px solid rgb(214, 214, 214);
+            }
+          }
+        }
+        .inputs {
+          outline: none;
+          display: flex;
+          flex-direction: column;
+         
+         
+          display: flex;
+          align-items: center;
+          justify-content: center;
+           width: 100%;
+           position: relative;
+        
+          .border{
+            position: absolute;
+            top: 250px;
+          
+            width: 250px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+          }
+          select {
+            margin-top: 7px;
+            padding: 10px 8px 10px 12px;
+            width: 202px;
+            border-radius: 6px;
+            border: 1px solid rgb(214, 214, 214);
+          }
+          p {
+            margin-top: 7px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+    
+
+      }
+      .nav {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background: #ffffff;
+            height: 70px;
+            .nav-bar {
+              margin-left: 10px;
+              background: #ffffff;
+              width: 161px;
+              height: 46px;
+              position: relative;
+              p:first-of-type {
+                position: absolute;
+                top: 4px;
+                left: 11px;
+                font-size: 1.8rem;
+                color: #414042;
+                font-weight: bold;
+              }
+              p {
+                position: absolute;
+                top: 2px;
+                left: 120px;
+                font-size: 1.7rem;
+                color: white;
+                font-weight: 600;
+              }
+            }
+          }
+  }
+    
+ 
+}
+
+
+
+
